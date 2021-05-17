@@ -1,0 +1,8 @@
+hll:
+  dispatch:
+    url: https://xuzhijun.com
+
+#logging:
+#  pattern:
+#    file: ###|||%d{yyyy-MM-dd HH:mm:ss.SSS}|||%level|||%X{HLL_TID}|||%thread|||%logger{0}-→%msg%n
+#    console: ###|||%d{yyyy-MM-dd HH:mm:ss.SSS}|||%level|||%X{HLL_TID}|||%thread|||%logger{0}-→%msg%n
