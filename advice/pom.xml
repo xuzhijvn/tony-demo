@@ -7,17 +7,14 @@
         <artifactId>parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <artifactId>spring-redis-lock</artifactId>
-    <packaging>pom</packaging>
-
+    <artifactId>advice</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.3</version>
+        </dependency>
     </dependencies>
-
-    <modules>
-        <module>redisson</module>
-        <module>redis-lock-registry</module>
-    </modules>
 
 </project>

@@ -7,17 +7,6 @@
         <artifactId>parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <artifactId>spring-redis-lock</artifactId>
-    <packaging>pom</packaging>
-
-
-    <dependencies>
-    </dependencies>
-
-    <modules>
-        <module>redisson</module>
-        <module>redis-lock-registry</module>
-    </modules>
+    <artifactId>k8s</artifactId>
 
 </project>

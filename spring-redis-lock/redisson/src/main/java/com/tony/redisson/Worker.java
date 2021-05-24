@@ -14,13 +14,13 @@ public class Worker implements Runnable {
 
     private final CountDownLatch startSignal;
     private final CountDownLatch doneSignal;
-    private final DistributedLockManager distributedLockManager;
+    private final TestService testService;
     private RedissonClient redissonClient;
 
-    public Worker(CountDownLatch startSignal, CountDownLatch doneSignal, DistributedLockManager distributedLockManager, RedissonClient redissonClient) {
+    public Worker(CountDownLatch startSignal, CountDownLatch doneSignal, TestService testService, RedissonClient redissonClient) {
         this.startSignal = startSignal;
         this.doneSignal = doneSignal;
-        this.distributedLockManager = distributedLockManager;
+        this.testService = testService;
         this.redissonClient = redissonClient;
     }
 
@@ -34,7 +34,11 @@ public class Worker implements Runnable {
 //            Integer count = service.aspect(new Person(1, "张三"));
 //            Integer count = service.aspect("1");
 
-            Integer count = distributedLockManager.aspect(() -> aspect());
+            Person person = new Person();
+            person.setId(783175223);
+            person.setName("tony");
+
+            Integer count = testService.doSomething3(() -> work(), person);
 
             System.out.println(Thread.currentThread().getName() + ": count = " + count);
 
@@ -44,7 +48,7 @@ public class Worker implements Runnable {
             System.out.println(ex);
         }
     }
-    private int aspect() {
+    private int work() {
         RMap<String, Integer> map = redissonClient.getMap("distributionTest");
 
         Integer count1 = map.get("count");

@@ -29,7 +29,7 @@ public class RedissonConfig {
     }
 
     @Bean
-    DistributedLockTemplate distributedLockTemplate(RedissonClient redissonClient) {
-        return new SingleDistributedLockTemplate(redissonClient);
+    RedissonLockTemplate distributedLockTemplate(RedissonClient redissonClient) {
+        return new SingleRedissonLockTemplate(redissonClient);
     }
 }

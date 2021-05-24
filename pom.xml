@@ -18,6 +18,9 @@
     <modules>
         <module>spring-redis-cache</module>
         <module>spring-redis-lock</module>
+        <module>gof</module>
+        <module>k8s</module>
+        <module>advice</module>
     </modules>
 
     <!-- 属性 -->
@@ -57,6 +60,17 @@
             <groupId>com.dianping.cat</groupId>
             <artifactId>cat-client</artifactId>
             <version>2.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.6.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
 

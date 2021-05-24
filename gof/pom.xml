@@ -7,17 +7,15 @@
         <artifactId>parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <artifactId>spring-redis-lock</artifactId>
+    <artifactId>gof</artifactId>
     <packaging>pom</packaging>
 
-
-    <dependencies>
-    </dependencies>
-
     <modules>
-        <module>redisson</module>
-        <module>redis-lock-registry</module>
+        <module>spring-strategy</module>
+        <module>annotation-strategy</module>
     </modules>
+    <dependencies>
+
+    </dependencies>
 
 </project>

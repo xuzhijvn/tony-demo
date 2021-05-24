@@ -4,20 +4,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.tony</groupId>
-        <artifactId>parent</artifactId>
+        <artifactId>gof</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <artifactId>spring-redis-lock</artifactId>
-    <packaging>pom</packaging>
-
-
+    <artifactId>spring-strategy</artifactId>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
-
-    <modules>
-        <module>redisson</module>
-        <module>redis-lock-registry</module>
-    </modules>
 
 </project>
