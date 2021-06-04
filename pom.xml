@@ -21,6 +21,8 @@
         <module>gof</module>
         <module>k8s</module>
         <module>advice</module>
+        <module>spi</module>
+        <module>spring-boot-starter</module>
     </modules>
 
     <!-- 属性 -->

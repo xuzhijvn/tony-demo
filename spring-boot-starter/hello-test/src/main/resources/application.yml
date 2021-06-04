@@ -1,0 +1,7 @@
+server:
+  port: 3801
+tony:
+  hello:
+    enabled: true
+    name: tony
+    age: 18
