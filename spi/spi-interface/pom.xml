@@ -7,6 +7,6 @@
         <artifactId>spi</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>spi-service</artifactId>
+    <artifactId>spi-interface</artifactId>
 
 </project>

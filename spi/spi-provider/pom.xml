@@ -5,7 +5,7 @@
     <dependencies>
         <dependency>
             <groupId>com.tony</groupId>
-            <artifactId>spi-service</artifactId>
+            <artifactId>spi-interface</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
