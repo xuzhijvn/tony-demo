@@ -6,7 +6,7 @@ import org.springframework.retry.annotation.Retryable;
 import org.springframework.stereotype.Service;
 
 /**
- * @author tony121.xu@huolala.cn
+ * @author tony老师
  * @create 2021-05-01
  * Description:
  */

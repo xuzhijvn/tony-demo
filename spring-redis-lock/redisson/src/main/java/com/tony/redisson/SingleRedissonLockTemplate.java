@@ -6,7 +6,7 @@ import org.redisson.api.RedissonClient;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author tony121.xu@huolala.cn
+ * @author tony老师
  * @create 2021-05-17
  * Description:
  */
