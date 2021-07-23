@@ -1,4 +1,4 @@
-package com.tony.springstrategy;
+package com.tony;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
