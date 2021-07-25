@@ -1,5 +1,5 @@
  /*
-  *       Copyright© (2020) Lalamove Co., Ltd.
+  *       Copyright© (2020) TONY Co., Ltd.
   */
  package com.tony.annotationstrategy;
 
