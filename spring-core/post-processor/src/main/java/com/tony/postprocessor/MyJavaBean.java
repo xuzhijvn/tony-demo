@@ -3,8 +3,10 @@
  */
 package com.tony.postprocessor;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.*;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 
 import javax.annotation.PostConstruct;
 
@@ -14,9 +16,13 @@ import javax.annotation.PostConstruct;
  * @description:
  */
 
-public class MyJavaBean implements InitializingBean, DisposableBean {
+public class MyJavaBean implements InitializingBean, DisposableBean, BeanNameAware, BeanFactoryAware, ApplicationContextAware {
     private String desc;
     private String remark;
+
+    private String beanName;
+    private BeanFactory beanFactory;
+    private ApplicationContext applicationContext;
 
     public MyJavaBean() {
         System.out.println("2 Bean的无参构造函数");
@@ -83,4 +89,22 @@ public class MyJavaBean implements InitializingBean, DisposableBean {
     }
 
 
+    @Override
+    public void setBeanName(String s) {
+        this.beanName = s;
+        System.out.println("******beanName = " + this.beanName);
+    }
+
+    @Override
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+        this.beanFactory = beanFactory;
+        System.out.println("******beanFactory = " + this.beanFactory);
+
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+        System.out.println("******applicationContext = " + this.applicationContext);
+    }
 }
