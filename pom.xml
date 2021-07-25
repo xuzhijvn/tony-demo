@@ -23,6 +23,8 @@
         <module>advice</module>
         <module>spi</module>
         <module>spring-boot-starter</module>
+        <module>spring-core</module>
+        <module>annotation</module>
     </modules>
 
     <!-- 属性 -->

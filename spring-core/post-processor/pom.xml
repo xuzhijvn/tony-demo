@@ -4,20 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.tony</groupId>
-        <artifactId>tony-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <artifactId>spring-core</artifactId>
     </parent>
-
-    <artifactId>spring-redis-lock</artifactId>
-    <packaging>pom</packaging>
-
-
-    <dependencies>
-    </dependencies>
-
-    <modules>
-        <module>redisson</module>
-        <module>redis-lock-registry</module>
-    </modules>
+    <artifactId>post-processor</artifactId>
 
 </project>

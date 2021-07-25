@@ -7,17 +7,10 @@
         <artifactId>tony-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <artifactId>spring-redis-lock</artifactId>
+    <artifactId>spring-core</artifactId>
+    <name>spring-core</name>
     <packaging>pom</packaging>
 
 
-    <dependencies>
-    </dependencies>
-
-    <modules>
-        <module>redisson</module>
-        <module>redis-lock-registry</module>
-    </modules>
 
 </project>
