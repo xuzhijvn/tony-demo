@@ -4,21 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.tony</groupId>
-        <artifactId>parent</artifactId>
+        <artifactId>gof</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>gof</artifactId>
-    <packaging>pom</packaging>
 
-    <modules>
-        <module>spring-strategy</module>
-        <module>annotation-strategy</module>
-        <module>spring-strategy-v2</module>
-        <module>chain-responsibility</module>
-        <module>spring-chain-responsibility</module>
-    </modules>
-    <dependencies>
-
-    </dependencies>
+    <artifactId>chain-responsibility</artifactId>
 
 </project>
