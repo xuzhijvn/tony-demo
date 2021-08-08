@@ -1,6 +1,6 @@
 package com.tony.springstrategyv2.util;
 
-import org.apache.commons.lang3.ArrayUtils;
+import cn.hutool.core.util.ArrayUtil;
 import org.springframework.beans.factory.BeanDefinitionStoreException;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.core.io.Resource;
@@ -40,7 +40,7 @@ public class ClassScaner implements ResourceLoaderAware {
     public static Set<Class<?>> scan(String[] basePackages, Class<? extends Annotation>... annotations) {
         ClassScaner cs = new ClassScaner();
 
-        if (ArrayUtils.isNotEmpty(annotations)) {
+        if (ArrayUtil.isNotEmpty(annotations)) {
             for (Class anno : annotations) {
                 cs.addIncludeFilter(new AnnotationTypeFilter(anno));
             }

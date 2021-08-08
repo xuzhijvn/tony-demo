@@ -1,12 +1,12 @@
 package com.tony.springstrategyv2.handler;
 
 import com.tony.springstrategyv2.util.ClassScaner;
-import com.google.common.collect.Maps;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -29,7 +29,7 @@ public class HandlerProcessor implements BeanFactoryPostProcessor {
      */
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        Map<String, Class> handlerMap = Maps.newHashMapWithExpectedSize(3);
+        Map<String, Class> handlerMap = new HashMap<>(3);
         ClassScaner.scan(HANDLER_PACKAGE, HandlerType.class).forEach(clazz -> {
             String type = clazz.getAnnotation(HandlerType.class).value();
             handlerMap.put(type, clazz);
