@@ -1,0 +1,13 @@
+# 应用名称
+spring:
+  application:
+    name: mysql-tx-isolation
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://xxx.xxx.xxx.xxx:3306/test?serverTimezone=Asia/Shanghai&characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+logging:
+  level:
+    com.tony.mysql.tx.isolation.generator.mapper: DEBUG

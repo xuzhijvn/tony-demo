@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tony.mysql.tx.isolation.generator.mapper.GoodMapper">
+
+    <resultMap id="BaseResultMap" type="com.tony.mysql.tx.isolation.generator.domain.Good">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="goodName" column="good_name" jdbcType="VARCHAR"/>
+            <result property="goodNum" column="good_num" jdbcType="INTEGER"/>
+            <result property="updatedAt" column="updated_at" jdbcType="TIMESTAMP"/>
+            <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,good_name,good_num,
+        update_at,create_at
+    </sql>
+</mapper>

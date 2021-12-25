@@ -25,6 +25,7 @@
         <module>spring-boot-starter</module>
         <module>spring-core</module>
         <module>annotation</module>
+        <module>mysql-tx-isolation</module>
     </modules>
 
     <!-- 属性 -->
@@ -87,6 +88,11 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.3.2</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com</groupId>-->
+<!--            <artifactId>wuxisuo</artifactId>-->
+<!--            <version>1.0.0</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>
