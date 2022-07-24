@@ -26,6 +26,7 @@
         <module>spring-core</module>
         <module>annotation</module>
         <module>mysql-tx-isolation</module>
+        <module>disruptor</module>
     </modules>
 
     <!-- 属性 -->
