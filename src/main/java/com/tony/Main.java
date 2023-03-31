@@ -3,6 +3,11 @@
   */
  package com.tony;
 
+ import cn.hutool.core.util.ClassUtil;
+
+ import java.util.List;
+ import java.util.Set;
+
  /**
   * @author tony老师
   * @create 2021-06-11
@@ -23,6 +28,10 @@
 //         System.out.println(c);
 
          System.out.println(flag1() && flag2());
+         Set<Class<?>> ss=  ClassUtil.scanPackageBySuper("", List.class);
+         for (Class s: ss) {
+             System.out.println(s);
+         }
      }
 
      public static void test1(Object... objects) {
