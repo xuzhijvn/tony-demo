@@ -1,0 +1,5 @@
+dubbo:
+  consumer:
+    filter: trace
+  provider:
+    filter: trace
