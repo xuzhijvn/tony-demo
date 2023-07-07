@@ -29,6 +29,9 @@
         <module>disruptor</module>
         <module>spring-cloud-core</module>
         <module>dubbo-spi-ioc</module>
+        <module>dubbo-spring-boot</module>
+        <module>other</module>
+        <module>tools</module>
     </modules>
 
     <!-- 属性 -->

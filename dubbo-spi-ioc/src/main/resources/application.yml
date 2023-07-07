@@ -1,5 +1,6 @@
 dubbo:
-  consumer:
-    filter: trace
-  provider:
-    filter: trace
+  application:
+    name: dobbo-spi-ioc
+
+server:
+  port: 8123

@@ -1,8 +1,8 @@
 package com.tony.dubbo.spi.ioc;
 
 import org.apache.dubbo.common.extension.ExtensionLoader;
+
 import org.apache.dubbo.config.spring.extension.SpringExtensionFactory;
-import org.apache.dubbo.rpc.Filter;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

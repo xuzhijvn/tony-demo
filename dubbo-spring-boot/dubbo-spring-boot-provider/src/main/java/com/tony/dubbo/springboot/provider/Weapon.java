@@ -1,6 +1,4 @@
-package com.tony.dubbo.spi.ioc;
-
-import lombok.Data;
+package com.tony.dubbo.springboot.provider;
 
 /**
  * @author 徐植君
