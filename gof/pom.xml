@@ -16,6 +16,7 @@
         <module>spring-strategy-v2</module>
         <module>chain-responsibility</module>
         <module>spring-chain-responsibility</module>
+        <module>chain</module>
     </modules>
     <dependencies>
 
