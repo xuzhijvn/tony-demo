@@ -8,9 +8,7 @@
         <artifactId>dubbo-spring-boot</artifactId>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.tony</groupId>
     <artifactId>dubbo-spring-boot-interface</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>dubbo-spring-boot-interface</name>
     <description>dubbo-spring-boot-interface</description>
 

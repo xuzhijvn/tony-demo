@@ -28,5 +28,6 @@
 
     <modules>
         <module>embedded-zookeeper</module>
+        <module>kafka-consumer</module>
     </modules>
 </project>

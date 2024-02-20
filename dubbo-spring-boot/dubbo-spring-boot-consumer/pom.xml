@@ -9,7 +9,6 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <artifactId>dubbo-spring-boot-consumer</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>dubbo-spring-boot-consumer</name>
     <description>dubbo-spring-boot-consumer</description>
 

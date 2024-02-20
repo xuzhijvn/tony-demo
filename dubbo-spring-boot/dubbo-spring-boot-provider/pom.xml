@@ -9,7 +9,6 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <artifactId>dubbo-spring-boot-provider</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>dubbo-spring-boot-provider</name>
     <description>dubbo-spring-boot-provider</description>
 

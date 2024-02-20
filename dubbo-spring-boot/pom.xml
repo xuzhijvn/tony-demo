@@ -9,7 +9,6 @@
     </parent>
     <packaging>pom</packaging>
     <artifactId>dubbo-spring-boot</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>dubbo-spring-boot</name>
     <description>dubbo-spring-boot</description>
     <properties>
