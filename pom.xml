@@ -32,6 +32,7 @@
         <module>dubbo-spring-boot</module>
         <module>other</module>
         <module>tools</module>
+        <module>dubbo-go</module>
     </modules>
 
     <!-- 属性 -->

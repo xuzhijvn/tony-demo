@@ -6,7 +6,6 @@
         <groupId>com.tony</groupId>
         <version>0.0.1-SNAPSHOT</version>
         <artifactId>dubbo-spring-boot</artifactId>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <artifactId>dubbo-spring-boot-consumer</artifactId>
     <name>dubbo-spring-boot-consumer</name>

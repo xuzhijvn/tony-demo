@@ -5,11 +5,12 @@
     <parent>
         <groupId>com.tony</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <artifactId>dubbo-spring-boot</artifactId>
+        <artifactId>dubbo-go</artifactId>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>dubbo-spring-boot-interface</artifactId>
-    <name>dubbo-spring-boot-interface</name>
-    <description>dubbo-spring-boot-interface</description>
 
+    <artifactId>java-server</artifactId>
+    <name>java-server</name>
+    <description>java-server</description>
 
 </project>

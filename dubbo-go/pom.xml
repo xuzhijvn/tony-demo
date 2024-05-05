@@ -7,13 +7,34 @@
         <artifactId>tony-demo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>other</artifactId>
-    <name>other</name>
-    <description>other</description>
-    <properties>
-        <java.version>8</java.version>
-    </properties>
+    <packaging>pom</packaging>
+    <artifactId>dubbo-go</artifactId>
+    <name>dubbo-go</name>
+    <description>dubbo-go</description>
+
+    <modules>
+        <module>java-client</module>
+        <module>java-server</module>
+    </modules>
+
     <dependencies>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-dependencies-zookeeper</artifactId>
+            <version>3.0.3</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-log4j12</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
